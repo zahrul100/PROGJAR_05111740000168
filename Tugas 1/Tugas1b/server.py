@@ -15,6 +15,7 @@ while True:
     print(f"connection from {client_address}")
     # Receive the data in small chunks and retransmit it
     fl = open("isifile.txt", 'r')
+    # fl = open("isifile.txt", 'rb')
     isi = fl.read(64)
     message = str(isi)
     # print(f"received {data}")
