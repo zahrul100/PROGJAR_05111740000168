@@ -1,3 +1,3 @@
-``Tugas 2 ``
+## Tugas 2 
 
 ![alt text](bart.png)
