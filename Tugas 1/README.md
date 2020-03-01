@@ -42,3 +42,17 @@ Soal : MODIFIKASILAH program client.py dan server.py agar dapat MENTRANSFER file
 ![alt text](foto/1aserver2.jpg)
 #### Direktori ketika server sudah menerima file,disimpan dengan nama received_file.txt
 ![alt text](foto/sudahterunduh1a.jpg)
+
+## Tugas 1b
+Soal : MODIFIKASILAH program server.py agar dapat mengirimkan MENTRANSFER FILE yang di request oleh client (letakkan program modifikasi di direktori tugas1b)
+
+#### Direktori ketika server belum menerima file
+![alt text](foto/belumterunduh1b.jpg)
+#### Server Mencari Koneksi
+![alt text](foto/1bserver1.jpg)
+#### Client menyambungkan untuk request file ke server
+![alt text](foto/1bclient1.jpg)
+#### Server mengirim file 
+![alt text](foto/1bserver2.jpg)
+#### Direktori ketika server sudah menerima file,disimpan dengan nama received_file.txt
+![alt text](foto/sudahterunduh1b.jpg)
