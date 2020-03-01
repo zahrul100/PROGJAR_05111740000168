@@ -28,3 +28,17 @@
 ![alt text](foto/31002b.jpg)
 #### Server Menerima Pesan
 ![alt text](foto/31002c.jpg)
+
+## Tugas 1a
+Soal : MODIFIKASILAH program client.py dan server.py agar dapat MENTRANSFER file dari client ke server (letakkan program modifikasi di direktori tugas1a)
+
+#### Direktori ketika server belum menerima file
+![alt text](foto/belumterunduh1a.jpg)
+#### Server Mencari Koneksi
+![alt text](foto/1aserver1.jpg)
+#### Client menyambungkan untuk mengirim file ke server
+![alt text](foto/1aclient1.jpg)
+#### Server menerima file 
+![alt text](foto/1aserver2.jpg)
+#### Direktori ketika server sudah menerima file,disimpan dengan nama received_file.txt
+![alt text](foto/sudahterunduh1a.jpg)
