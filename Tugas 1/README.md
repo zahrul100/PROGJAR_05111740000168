@@ -54,5 +54,5 @@ Soal : MODIFIKASILAH program server.py agar dapat mengirimkan MENTRANSFER FILE y
 ![alt text](foto/1bclient1.jpg)
 #### Server mengirim file 
 ![alt text](foto/1bserver2.jpg)
-#### Direktori ketika server sudah menerima file,disimpan dengan nama received_file.txt
+#### Direktori ketika client sudah menerima file,disimpan dengan nama received_file.txt
 ![alt text](foto/sudahterunduh1b.jpg)
