@@ -2,7 +2,7 @@
 
 ### Menjalankan Server dengan 3 port yang berbeda.Server memiliki IP 10.151.253.49 ,pesan yang dikirmkankan adalah "Teknik Informatika"
 
-#### Port 3001
+#### Port 31001
 
 ##### Server Mencari Koneksi
 ![alt text](foto/31000a.jpg)
@@ -11,7 +11,7 @@
 #### Server Menerima Pesan
 ![alt text](foto/31000c.jpg)
 
-#### Port 3001
+#### Port 31001
 
 ##### Server Mencari Koneksi
 ![alt text](foto/31001a.jpg)
@@ -20,7 +20,7 @@
 #### Server Menerima Pesan
 ![alt text](foto/31001c.jpg)
 
-#### Port 3002
+#### Port 31002
 
 ##### Server Mencari Koneksi
 ![alt text](foto/31002a.jpg)
