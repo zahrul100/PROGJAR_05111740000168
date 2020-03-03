@@ -9,6 +9,9 @@
 ![alt text](Foto/tugas32.jpg)
 
 ### Hasil gambar yang diunduh melalui 3 link yang berbeda
+Gambar 1
 ![alt text](Foto/tugas33.jpg)
+Gambar 2
 ![alt text](Foto/tugas34.jpg)
+Gambar 3
 ![alt text](Foto/tugas35.jpg)
