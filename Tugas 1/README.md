@@ -6,7 +6,7 @@ Keterangan : Disini PC saya menjadi Client  dengan IP Addres 10.151.252.191 dan 
              
 *Screenshoot dari terminal diambil dari sudut pandang kedua PC secara bergantian
 
-#### Port 31001
+#### Port 31000
 ##### Server Mencari Koneksi
 
 ![alt text](foto/31000a.jpg)
