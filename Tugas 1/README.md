@@ -2,12 +2,17 @@
 
 ### Menjalankan Server dengan 3 port yang berbeda.Server memiliki IP 10.151.253.49 ,pesan yang dikirmkankan adalah "Teknik Informatika"
 
-#### Port 31001
+Keterangan : Disini PC saya menjadi Client  dengan IP Addres 10.151.252.191
+             dan Server Diisi PC teman saya dengan IP Addres 10.151.253.49
+*Screenshoot dari terminal diambil dari sudut pandang kedua PC
 
+#### Port 31001
 ##### Server Mencari Koneksi
+
 ![alt text](foto/31000a.jpg)
-##### Client Menyambungkan
+##### Client Menyambungkan 
 ![alt text](foto/31000b.jpg)
+
 #### Server Menerima Pesan
 ![alt text](foto/31000c.jpg)
 
