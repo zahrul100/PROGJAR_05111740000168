@@ -4,6 +4,7 @@
 
 Keterangan : Disini PC saya menjadi Client  dengan IP Addres 10.151.252.191
              dan Server Diisi PC teman saya dengan IP Addres 10.151.253.49
+             
 *Screenshoot dari terminal diambil dari sudut pandang kedua PC
 
 #### Port 31001
