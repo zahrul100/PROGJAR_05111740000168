@@ -1,6 +1,7 @@
 import socket
 import sys
 import base64
+
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -9,7 +10,7 @@ server_address = ('127.0.0.1', 8889)
 print(sys.stderr, 'connecting to %s port %s' % server_address)
 
 sock.connect(server_address)
-pesan = ("upload gambar.jpg")
+pesan = ("upload buku.pdf")
 
 namafile = "".join(pesan.split() [1])
 
@@ -24,16 +25,21 @@ f.close
 
 f = open("base64encode","rb")
 
-l = pesan.encode()+(b" ")+f.read(1024-panjang)
+l = pesan.encode()+(b" ")+f.read(1024)
 #semua = f.read()
 #print(base64.encodestring(semua))
 print(l)
 #print(f.read())
 #print(l)
+#sock.send(l)
+#data= sock.recv(1024)
 while (l):
- #   print(l)
+   # print(l)
     sock.send(l)
     l =f.read(1024)
+    data = sock.recv(1024)
+    print(data)
 
-#sock.recv(1024)
+
+#data = sock.recv(1024)
 sock.close()

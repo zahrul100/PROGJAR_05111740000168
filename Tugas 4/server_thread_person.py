@@ -1,3 +1,4 @@
+
 from socket import *
 import socket
 import threading
@@ -22,20 +23,31 @@ class ProcessTheClient(threading.Thread):
             #hilangkan semua dalam while untuk memakai fitur list dan download
             #uncomen ini
             # data = self.connection.recv(1024)
+
             while True:
-                try:
+              #  try:
 
                     data = self.connection.recv(1024)
-                   #self.connection.sendall(data)
+
+                 #   self.connection.sendall(b"hali")
                     file = file + data
                     tes.append(data)
-                    print(b"isi = " + data)
-                except KeyboardInterrupt:
-                    pass
+                    bytenya = int(sys.getsizeof(data))
 
-                if not data: break
 
+                #    print(b"isi = " + data)
+                    if bytenya != 1057 :
+                        print(bytenya)
+                      #  self.connection.sendall(b"akhitnya")
+
+                        break
+                    else :
+                        print(bytenya)
+                        self.connection.sendall(b"halo")
+
+            print("sameeeee")
             #print(file)
+        #    self.connection.sendall(b"hele")
             data = file
             if data:
                 d = data.decode()
@@ -43,8 +55,10 @@ class ProcessTheClient(threading.Thread):
                 hasil = pm.proses(d)
                 hasil=hasil+"\r\n"
                 print("retunrnya = " + hasil)
+         #       data = self.connection.recv(1024)
+                print(hasil)
                 self.connection.sendall(hasil.encode())
-
+                print("sesudah")
             else:
                 break
         self.connection.close()
@@ -79,4 +93,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

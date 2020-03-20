@@ -16,6 +16,10 @@ pesan = (b"list")
 
 sock.send(pesan)
 print("Pesan terkirim")
-sleep(1)
+
 data = sock.recv(1024)
+print(data.decode())
+#data = sock.recv(1024)
+
+#print(data)
 sock.close()
