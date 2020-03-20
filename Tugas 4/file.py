@@ -1,5 +1,6 @@
 import shelve
 import uuid
+import socket
 import os
 import base64
 
@@ -34,14 +35,21 @@ class Dire:
         return True
     def download_data(self,nama=None):
         # ======Membaca file download =====
+        are = []
         f = open("direktori/" + nama, "rb")
         l =f.read()
         f.close()
+        print(l)
         # ======Mendownload file =====
-        f = open("download"+nama,"wb")
-        f.write(l)
-        f.close()
-        return True
+       #f = open("download"+nama,"wb")
+       #f.write(l)
+       #f.close()
+        hasil = base64.encodestring(l)
+        print(hasil)
+        are.append(hasil.decode())
+        print(are)
+ #       print("bisakah")
+        return are
 
     def list_data(self):
         file_list = os.listdir("direktori")
@@ -54,6 +62,9 @@ class Dire:
 
 if __name__=='__main__':
     dire = Dire()
+    input = "pesan.txt"
+    ini = dire.download_data(input)
+    print(ini)
    # dire.upload_data("gambartugas.jpg")
     #dire.download_data("gambartugas.jpg")
     print(dire.list_data())

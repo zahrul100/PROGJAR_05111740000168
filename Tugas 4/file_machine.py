@@ -10,27 +10,21 @@ COMMAND spasi PARAMETER spasi PARAMETER ...
 
 FITUR
 
-- create : untuk membuat record
-  request : create
-  parameter : nama spasi notelpon
+- upload : untuk mengupload file ke direktori
+  request : upload
+  parameter : namafile spasi isifile
   response : berhasil -> ok
              gagal -> error
 
-- delete : untuk menghapus record
-  request: delete
-  parameter : id
-  response: berhasil -> OK
-            gagal -> ERROR
-
-- list : untuk melihat daftar record
+- list : untuk melihat daftar dalam direktori
   request: list
   parameter: tidak ada
-  response: daftar record person yang ada
+  response: daftar isi direktori file yang ada
 
-- get : untuk mencari record berdasar nama
-  request: get 
-  parameter: nama yang dicari
-  response: record yang dicari dalam bentuk json format
+- download : untuk mendownload file berdasarkan nama file
+  request: download
+  parameter: namafile yang ingin didownload
+  response: memberikan unduhan file kepada client
 
 - jika command tidak dikenali akan merespon dengan ERRCMD
 
@@ -38,7 +32,7 @@ FITUR
 
 p = Dire()
 
-class PersonMachine:
+class FileMachine:
     def proses(self,string_to_process):
         s = string_to_process
         cstring = s.split(" ")
@@ -63,11 +57,14 @@ class PersonMachine:
                 hasil = p.list_data()
                 print(hasil)
                 return json.dumps(hasil)
-            elif (command=='get'):
-                logging.warning("list")
+            elif (command=='download'):
+                logging.warning("download")
                 nama = cstring[1].strip()
-                hasil = p.get_data(nama)
-                return json.dumps(hasil)
+                print("masuk")
+                hasil = p.download_data(nama)
+                #print(hasil.decode())
+               # hasil = hasil.decode
+                return hasil[0]
             else:
                 return "ERRCMD"
         except:
@@ -76,7 +73,11 @@ class PersonMachine:
 
 if __name__=='__main__':
     pm = PersonMachine()
-    hasil = pm.proses("list")
+    input = "pesan.txt"
+    hasil = pm.proses("download pesan.txt")
+    print("hasilnya")
     print(hasil)
-    hasil = pm.proses("get vanbasten")
-    print(hasil)
+    #hasil = pm.proses("list")
+    #print(hasil)
+    #hasil = pm.proses("get vanbasten")
+    #print(hasil)

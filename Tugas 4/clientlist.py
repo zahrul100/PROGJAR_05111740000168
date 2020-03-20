@@ -15,10 +15,10 @@ sock.connect(server_address)
 pesan = (b"list")
 
 sock.send(pesan)
-print("Pesan terkirim")
+print("Request terkirim")
 
 data = sock.recv(1024)
-print(data.decode())
+print("List isi direktori : \n"+data.decode())
 #data = sock.recv(1024)
 
 #print(data)

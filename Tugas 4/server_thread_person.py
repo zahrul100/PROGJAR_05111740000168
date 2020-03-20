@@ -6,9 +6,9 @@ import logging
 import time
 import sys
 import base64
-from person_machine import PersonMachine
+from file_machine import FileMachine
 
-pm = PersonMachine()
+pm = FileMachine()
 
 class ProcessTheClient(threading.Thread):
     def __init__(self, connection, address):
@@ -49,16 +49,18 @@ class ProcessTheClient(threading.Thread):
             #print(file)
         #    self.connection.sendall(b"hele")
             data = file
+
             if data:
                 d = data.decode()
                 print("Masuk Decode")
                 hasil = pm.proses(d)
-                hasil=hasil+"\r\n"
-                print("retunrnya = " + hasil)
+                hasil=hasil
+                print(hasil)
          #       data = self.connection.recv(1024)
                 print(hasil)
                 self.connection.sendall(hasil.encode())
                 print("sesudah")
+             #   sleep(3)
             else:
                 break
         self.connection.close()
