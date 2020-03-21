@@ -21,9 +21,11 @@ Isi direktori client sebelum
 Isi direktori client sesudah 
 ![alt text](picture/direktorisesudah.png)
 Penampakan file 
+
 ![alt text](picture/gambarbuku.jpg)
 ## Melihat isi list file menggunakan client clientlist.py
 ### berikut adalah mengupload file menggunakan clientlist.py
 menjalankan clientlist.py yang didalamnya memiliki perintah "list"
+dan output dalam bentuk Json
 
 ![alt text](picture/list.png)
