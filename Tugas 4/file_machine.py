@@ -55,8 +55,10 @@ class FileMachine:
                 logging.warning("list")
                 print("masuk list")
                 hasil = p.list_data()
-                print(hasil)
-                return json.dumps(hasil)
+                dict = {"status":"succes","data":hasil}
+
+                #print(hasil)
+                return json.dumps(dict)
             elif (command=='download'):
                 logging.warning("download")
                 nama = cstring[1].strip()
@@ -72,12 +74,12 @@ class FileMachine:
 
 
 if __name__=='__main__':
-    pm = PersonMachine()
+    pm = FileMachine()
     input = "pesan.txt"
-    hasil = pm.proses("download pesan.txt")
-    print("hasilnya")
+#    hasil = pm.proses("download pesan.txt")
+#    print("hasilnya")
+#    print(hasil)
+    hasil = pm.proses("list")
     print(hasil)
-    #hasil = pm.proses("list")
-    #print(hasil)
     #hasil = pm.proses("get vanbasten")
     #print(hasil)

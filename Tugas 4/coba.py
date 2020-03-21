@@ -1,11 +1,14 @@
 import base64
+import json
 
-f=open("gambar.jpg","rb")
-data = f.read()
+i="makan"
+# some JSON:
+x = { "name":"John", "age":i, "city":"New York"}
 
-print(data)
-data = f.read(4)
-print(data)
-data = f.read(4)
-print(data)
+# parse x:
+y = json.dumps(x)
+
+# the result is a Python dictionary:
+print(y)
+
 #print(base64.encodestring(data))

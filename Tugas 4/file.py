@@ -63,9 +63,9 @@ class Dire:
 if __name__=='__main__':
     dire = Dire()
     input = "pesan.txt"
-    ini = dire.download_data(input)
-    print(ini)
-   # dire.upload_data("gambartugas.jpg")
+    #ini = dire.download_data(input)
+    # print(ini)
+    # dire.upload_data("gambartugas.jpg")
     #dire.download_data("gambartugas.jpg")
     print(dire.list_data())
     #print(tes)
