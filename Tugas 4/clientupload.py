@@ -10,7 +10,7 @@ server_address = ('127.0.0.1', 8889)
 print(sys.stderr, 'connecting to %s port %s' % server_address)
 
 sock.connect(server_address)
-pesan = ("upload buku.pdf")
+pesan = ("upload gambar.jpg")
 
 namafile = "".join(pesan.split() [1])
 
@@ -38,7 +38,7 @@ while (l):
     sock.send(l)
     l =f.read(1024)
     data = sock.recv(1024)
-    print(data)
+print(data)
 
 
 #data = sock.recv(1024)

@@ -89,6 +89,7 @@ class Server(threading.Thread):
 
 
 def main():
+    print("Menjalankan Server...")
     svr = Server()
     svr.start()
 

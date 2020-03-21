@@ -12,26 +12,26 @@ print(sys.stderr, 'connecting to %s port %s' % server_address)
 sock.connect(server_address)
 
 
-requestfile = "gambartugas.jpg"
+requestfile = "buku.pdf"
 request = (b"download "+requestfile.encode())
-print(request)
+print("Mendownload file "+request.decode()+"...")
 f = open(requestfile,"wb")
 file =(b"")
 sock.send(request)
 data = sock.recv(1024)
 while True:
     file = file + data
-   # print(file)
+    print(data)
     #data = sock.recv(1024)
     #print(sys.getsizeof(data))
     if sys.getsizeof(data) != 1057:
-        print(sys.getsizeof(data))
+        #print(sys.getsizeof(data))
         break
     else :
         data = sock.recv(1024)
 
 
-print(file)
+#print(file)
 #file = base64.decodestring(file)
 #file = file.decode()
 file = base64.decodestring(file)
@@ -39,8 +39,8 @@ file = base64.decodestring(file)
 f.write(file)
 f.close()
 f = open("direktori/gambar.jpg","rb")
-print(f.read())
+#print(f.read())
 #print(base64.decode(data))
 f.close()
-
+print("file "+requestfile+"telah berhasil terdownload")
 sock.close()
