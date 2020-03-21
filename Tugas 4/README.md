@@ -1,5 +1,7 @@
 # Tugas Progjar 4
-## Menjalankan server_thread_file.py
+
+## Membuat Server untuk menerima request dan merespon client 
+Menjalankan server_thread_file.py
 ![alt text](picture/server.png)
 
 ## Mengupload File menggunakan client clientupload.py
