@@ -12,8 +12,9 @@ Isi direktori upload sebelum
 ![alt text](picture/direktoriclientsebelum.png)
 Isi direktori upload sesudah 
 ![alt text](picture/direktoriclientsesudah.png)
-Penampakan file 
-![alt text](picture/gambar.jpg)
+Penampakan file buku.pdf
+
+![alt text](picture/gambarbuku.jpg)
 ## Mendownload File menggunakan client clientdownload.py
 ### berikut adalah mendownload file menggunakan clientlist.py
 menjalankan clientdownload.py yang didalamnya memiliki perintah "download buku.pdf"
@@ -22,9 +23,9 @@ Isi direktori client sebelum
 ![alt text](picture/direktorisebelum.png)
 Isi direktori client sesudah 
 ![alt text](picture/direktorisesudah.png)
-Penampakan file 
+Penampakan file gambar.jpg
 
-![alt text](picture/gambarbuku.jpg)
+![alt text](picture/gambar.jpg)
 ## Melihat isi list file menggunakan client clientlist.py
 ### berikut adalah Melihat isi direktori menggunakan clientlist.py
 menjalankan clientlist.py yang didalamnya memiliki perintah "list"
