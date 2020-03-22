@@ -9,23 +9,25 @@ Menjalankan server_thread_file.py
 Menjalankan clientupload.py yang didalamnya memiliki perintah "upload gambar.jpg isifile"
 ![alt text](picture/upload.png)
 Isi direktori upload sebelum
-![alt text](picture/direktoriclientsebelum.png)
+![alt text](picture/direktorisebelum.png)
 Isi direktori upload sesudah 
-![alt text](picture/direktoriclientsesudah.png)
-Penampakan file buku.pdf
+![alt text](picture/direktorisesudah.png)
+Penampakan file gambar.jpg
 
-![alt text](picture/gambarbuku.jpg)
+![alt text](picture/gambar.jpg)
 ## Mendownload File menggunakan client clientdownload.py
 ### berikut adalah mendownload file menggunakan clientlist.py
 menjalankan clientdownload.py yang didalamnya memiliki perintah "download buku.pdf"
 ![alt text](picture/download.png)
 Isi direktori client sebelum
-![alt text](picture/direktorisebelum.png)
-Isi direktori client sesudah 
-![alt text](picture/direktorisesudah.png)
-Penampakan file gambar.jpg
+![alt text](picture/direktoriclientsebelum.png)
 
-![alt text](picture/gambar.jpg)
+Isi direktori client sesudah 
+![alt text](picture/direktoriclientsesudah.png)
+
+Penampakan file buku.pdf
+
+![alt text](picture/gambarbuku.jpg)
 ## Melihat isi list file menggunakan client clientlist.py
 ### berikut adalah Melihat isi direktori menggunakan clientlist.py
 menjalankan clientlist.py yang didalamnya memiliki perintah "list"
