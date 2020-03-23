@@ -13,7 +13,7 @@ FITUR
 - upload : untuk mengupload file ke direktori
   request : upload
   parameter : namafile spasi isifile
-  response : berhasil -> ok
+  response : berhasil -> ok,(terupload file di folder direktori)
              gagal -> error
 
 - list : untuk melihat daftar dalam direktori
