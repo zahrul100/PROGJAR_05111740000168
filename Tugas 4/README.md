@@ -1,9 +1,7 @@
 # Tugas Progjar 4
 ## PROTOCOL FORMAT
-
-PROTOCOL FORMAT
-#### string terbagi menjadi 2 bagian, dipisahkan oleh spasi
-#### COMMAND spasi PARAMETER spasi PARAMETER ...
+### string terbagi menjadi 2 bagian, dipisahkan oleh spasi
+### COMMAND spasi PARAMETER spasi PARAMETER ...
 FITUR
 - upload : untuk mengupload file ke direktori
   request : upload
