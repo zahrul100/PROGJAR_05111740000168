@@ -1,4 +1,25 @@
 # Tugas Progjar 4
+## PROTOCOL FORMAT
+'''
+PROTOCOL FORMAT
+string terbagi menjadi 2 bagian, dipisahkan oleh spasi
+COMMAND spasi PARAMETER spasi PARAMETER ...
+FITUR
+- upload : untuk mengupload file ke direktori
+  request : upload
+  parameter : namafile spasi isifile
+  response : berhasil -> ok,(terupload file di folder direktori)
+             gagal -> error
+- list : untuk melihat daftar dalam direktori
+  request: list
+  parameter: tidak ada
+  response: daftar isi direktori file yang ada
+- download : untuk mendownload file berdasarkan nama file
+  request: download
+  parameter: namafile yang ingin didownload
+  response: memberikan unduhan file kepada client
+- jika command tidak dikenali akan merespon dengan ERRCMD
+'''
 
 ## Membuat Server untuk menerima request dan merespon client 
 Menjalankan server_thread_file.py
