@@ -1,6 +1,6 @@
 # Tugas Progjar 4
 ## PROTOCOL FORMAT
-'''
+
 PROTOCOL FORMAT
 string terbagi menjadi 2 bagian, dipisahkan oleh spasi
 COMMAND spasi PARAMETER spasi PARAMETER ...
@@ -19,7 +19,7 @@ FITUR
   parameter: namafile yang ingin didownload
   response: memberikan unduhan file kepada client
 - jika command tidak dikenali akan merespon dengan ERRCMD
-'''
+
 
 ## Membuat Server untuk menerima request dan merespon client 
 Menjalankan server_thread_file.py
