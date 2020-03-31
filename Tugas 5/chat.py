@@ -93,6 +93,7 @@ class Chat:
 		return {'status': 'OK', 'messages': msgs}
 
 	def get_listuser(self):
+		listuser = {'listuser':{}}
 
 		return {'status': 'OK','listuser': list(self.users.keys()) }
 

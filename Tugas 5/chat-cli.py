@@ -32,7 +32,7 @@ class ChatClient:
                 return self.listuser()
             elif (command=="logout"):
                 if(self.tokenid ==""):
-                    return "Anda belum login"
+                    return "ERROR,Anda belum login"
                 self.tokenid=""
                 return "logout berhasil"
             else:
@@ -45,11 +45,11 @@ class ChatClient:
             receivemsg = "" #untuk nanti menerima respon server
             while True:
                 data = self.sock.recv(64) #menerima data dari server
-                print("diterima dari server",data) #mengprint data yang diterima dari server per besar bit
+#                print("diterima dari server",data) #mengprint data yang diterima dari server per besar bit
                 if (data):
                     receivemsg = "{}{}" . format(receivemsg,data.decode())  #data harus didecode agar dapat di operasikan dalam bentuk string
                     if receivemsg[-4:]=='\r\n\r\n':
-                        print("end of string")
+#                        print("end of string")
                         return json.loads(receivemsg) #mereturn pesan dalam format json
         except:
             self.sock.close()
@@ -66,7 +66,7 @@ class ChatClient:
         if (self.tokenid==""): #jika tidak ada token id
             return "Error, not authorized"
         string="send {} {} {} \r\n" . format(self.tokenid,usernameto,message) #menjadikan string menjadi 1
-        print(string)
+      #  print(string)
         result = self.sendstring(string) #mengirim string ke server dan menerima responnya
         if result['status']=='OK':
             return "message sent to {}" . format(usernameto)
