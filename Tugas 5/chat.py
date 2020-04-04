@@ -103,13 +103,24 @@ class Chat:
 	#	print(tokenid[1])
 		listuser = ""
 		for x in tokenid:
-			#print(self.sessions[x]['username'])
-			listuser = listuser +self.sessions[x]['username']+' '
+			#print(self.sessions[x])
+			if self.sessions[x]['username'] in listuser:
+				listuser = listuser
+			else:
+
+				listuser = listuser +self.sessions[x]['username']+' '
 		print(listuser)
 		#print(self.sessions[tokenid[1]]['username'])
 		return {'status': 'OK','listuseraktif': listuser }
 	def logout_user(self,sessionid):
-		del self.sessions[sessionid]
+		username = self.sessions[sessionid]['username']
+		listtoken = []
+		for x in self.sessions:
+			if username == self.sessions[x]['username']:
+				listtoken.append(x)
+		for x in listtoken:
+			del self.sessions[x]
+		#del self.sessions[sessionid]
 		return {'status': 'OK','messages':'logout berhasil'}
 if __name__=="__main__":
 	j = Chat()
@@ -117,6 +128,9 @@ if __name__=="__main__":
 #	print(j.users)
 	l=j.proses(("auth messi surabaya"))
 	l=j.proses(("auth lineker surabaya"))
+	l=j.proses(("auth lineker surabaya"))
+
+	l=j.proses(("auth henderson surabaya"))
 	print(l)
 	k=j.proses(("listuser "))
 	print(k)
