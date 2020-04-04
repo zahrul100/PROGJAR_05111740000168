@@ -14,6 +14,7 @@ class Chat:
 		self.users['lineker']={ 'nama': 'Gary Lineker', 'negara': 'Inggris', 'password': 'surabaya','incoming': {}, 'outgoing':{}}
 	def proses(self,data):
 		j=data.split(" ") #meng split inpitan
+
 		try:
 			command=j[0].strip() #mencari command pertama
 			if (command=='auth'): #jika string pertama auth
@@ -39,6 +40,11 @@ class Chat:
 				sessionid = j[1].strip()
 
 				return self.get_listuser()
+			elif (command=='logout'):
+				sessionid = j[1].strip()
+
+				return self.logout_user(sessionid)
+
 			else:
 				return {'status': 'ERROR', 'message': '**Protocol Tidak Benar'}
 		except KeyError:
@@ -93,15 +99,28 @@ class Chat:
 		return {'status': 'OK', 'messages': msgs}
 
 	def get_listuser(self):
-		listuser = {'listuser':{}}
-
-		return {'status': 'OK','listuser': list(self.users.keys()) }
-
+		tokenid = list(self.sessions.keys())
+	#	print(tokenid[1])
+		listuser = ""
+		for x in tokenid:
+			#print(self.sessions[x]['username'])
+			listuser = listuser +self.sessions[x]['username']+' '
+		print(listuser)
+		#print(self.sessions[tokenid[1]]['username'])
+		return {'status': 'OK','listuseraktif': listuser }
+	def logout_user(self,sessionid):
+		del self.sessions[sessionid]
+		return {'status': 'OK','messages':'logout berhasil'}
 if __name__=="__main__":
 	j = Chat()
 	i=0
 #	print(j.users)
-	print(j.get_listuser())
+	l=j.proses(("auth messi surabaya"))
+	l=j.proses(("auth lineker surabaya"))
+	print(l)
+	k=j.proses(("listuser "))
+	print(k)
+	#print(j.get_listuser())
 	#user = {'listuser':list(j.users.keys())}
 	#print(user)
 	#print(j.users)
