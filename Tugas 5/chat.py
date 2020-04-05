@@ -39,7 +39,7 @@ class Chat:
 			elif (command=='listuser'):
 				sessionid = j[1].strip()
 
-				return self.get_listuser()
+				return self.get_listuser(sessionid)
 			elif (command=='logout'):
 				sessionid = j[1].strip()
 
@@ -98,7 +98,9 @@ class Chat:
 
 		return {'status': 'OK', 'messages': msgs}
 
-	def get_listuser(self):
+	def get_listuser(self,sessionid):
+		if (sessionid not in self.sessions):  # jika sessions nya tidak ada
+			return {'status': 'ERROR', 'message': 'Session Tidak Ditemukan'}
 		tokenid = list(self.sessions.keys())
 	#	print(tokenid[1])
 		listuser = ""
