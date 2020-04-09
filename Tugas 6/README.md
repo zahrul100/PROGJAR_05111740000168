@@ -1,3 +1,3 @@
 # Tugas 6
 ## Screenshoot
-![alt text](screenshoot.png)
+![alt text](Screenshoot.png)
