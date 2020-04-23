@@ -75,5 +75,5 @@ class HttpServer:
 		for atribut in calon:
 		    i=i+atribut+"\n"
             
-		isi = isiform+i
+		isi = "1.Data Post Dari Sebelumnya : "+isiform+"\n\n2.Isi Dari Header:"+i
 		return self.response(200,'OK',isi,headers)
