@@ -5,8 +5,8 @@
  <br>
 
 - Pull Update Terbaru
-- Menjalankan async_server.py dengan port 9002, 9003, 9004, 9005 dengan menggunakan WSL <br> dengan perintah :<br>
- `python3 async_server.py 9002 & python3 async_server.py 9003 & python3 async_server.py 9004 & python3 async_server.py 9005 &`
+- Menjalankan async_server.py dengan port 9002, 9003, 9004, 9005 dengan menggunakan Terminal Linux :<br>
+ 
     ![gambar1](https://github.com/zahrul100/PROGJAR_05111740000168/blob/master/Tugas%2010/picture/2.png)
  - Menjalankan file lb.py dan menjalankan di port 44444: <br> dengan perintah  <br>
  `python3 lb.py`
