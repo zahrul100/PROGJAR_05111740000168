@@ -14,7 +14,9 @@
  - Mengakses http://localhost:44444/page.html pada browser 
     ![gambar3](https://github.com/zahrul100/PROGJAR_05111740000168/blob/master/Tugas%2010/picture/4.png)
  - Mengecek dan melihat proses di log program bahwa setiap request akan dilayani oleh backend secara bergantian
-    <img width="1000" alt="gambar4" src="https://github.com/zahrul100/PROGJAR_05111740000168/blob/master/Tugas%2010/picture/5.png>
+ 
+    ![gambar3](https://github.com/zahrul100/PROGJAR_05111740000168/blob/master/Tugas%2010/picture/5.png)
+
 
  - Melakukan performance test seperti tugas 9, dan membandingkan penggunaan antara load balancer dengan async_server dengan server_thread_http pada folder progjar Tugas5 <br> Dengan parameter sebagai berikut : <br> Jumlah request 	:  1000 <br> Konkurensi	:  1,50, 100,500,1000 <br>
  
