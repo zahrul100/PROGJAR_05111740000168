@@ -22,7 +22,20 @@
  
  <a href="https://github.com/zahrul100/PROGJAR_05111740000168/blob/master/Tugas%2010/LaporanTugas10.pdf"> Laporan Tugas 10 Zahrul 05111740000168</a> 
  
+ Hasil SS performance test Asyncronus Server Dengan Load Balance
  
+- ab -n 1000 -c 1 -r http://127.0.0.1:44444/
+![alt text](picture/61.png)
+- ab -n 1000 -c 10 -r http://127.0.0.1:44444/
+![alt text](picture/610.png)
+- ab -n 1000 -c 100 -r http://127.0.0.1:44444/
+![alt text](picture/6100.png)
+- ab -n 1000 -c 500 -r http://127.0.0.1:44444/
+![alt text](picture/6500.png)
+
+- ab -n 1000 -c 1000 -r http://127.0.0.1:44444/
+![alt text](picture/61000.png)
+
  
    
  
